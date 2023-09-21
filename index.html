@@ -12,37 +12,46 @@
 </head>
   <body>
     <nav>
-        <div class="w-25">
-            <h3>presto.it</h3>
-        </div>
-        <div class=" w-50 d-flex justify-content-evenly">
-            <div>home</div>
-            <div>annunci</div>
-            <div>about us</div>
-            <div>categorie</div>
-            <div>contatti</div>
-        </div>
-        <div class="w-25 d-flex justify-content-end">
-            <div class="m-2">
-                <i class="bi bi-person"></i>
+        <div class="row">
+            <div class="panino">
+                <div class="linea"></div>
+                <div class="linea"></div>
+                <div class="linea"></div>
             </div>
-            <div class="m-2">
-                <i class="bi bi-cart-fill"></i>
+        </div>
+        <div class="media">
+            <div class="w-25">
+                <h3 class="ms-2">presto.it</h3>
+            </div>
+            <div class=" w-50 d-flex justify-content-evenly">
+                <div>home</div>
+                <div>annunci</div>
+                <div>about us</div>
+                <div>categorie</div>
+                <div>contatti</div>
+            </div>
+            <div class="w-25 d-flex justify-content-end">
+                <div class="m-2">
+                    <i class="bi bi-person"></i>
+                </div>
+                <div class="m-2">
+                    <i class="bi bi-cart-fill"></i>
+                </div>
             </div>
         </div>
     </nav>
     <header class="vh-100 container-fluid">
         <div class="row h-25"></div>
         <div class="row d-flex contenitore_header justify-content-evenly h-50">
-            <div class="descrizzione_header col-4 border text-center d-flex flex-column justify-content-evenly h-100">
+            <div class="descrizzione_header col-12 col-md-4 border text-center d-flex flex-column justify-content-evenly h-100">
                 <h1>titolo della pagina</h1>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati non nisi sequi in quia ipsa a dignissimos magnam, ex optio numquam molestias delectus dicta animi tempora eligendi. Asperiores, consectetur veniam?</p>
                 <div>
-                    <button class="me-5">compra</button>
-                    <button class="ms-5">esplora</button>
+                    <button class="me-5 header_button">compra</button>
+                    <button class="ms-5 header_button">esplora</button>
                 </div>
             </div>
-            <div class="col-3 border p-0 rounded-circle h-100">
+            <div class="d-none d-md-block col-3 border p-0 rounded-circle h-100">
                 <img class="rounded-circle" src="https://www.barbieriantiquariato.it/wp-content/uploads/2017/05/compro-antiquariato-orientale.jpg" alt="">
             </div>
         </div>
@@ -51,14 +60,22 @@
         </div>
     </header>
     <main>
+        <div class="container card_container">
+            <div class="row justify-content-evenly card_row">  
+        </div>
+        <hr>
+        <div class="text-center">
+            <h1>categorie</h1>
+        </div>
+        <hr>
         <div class="container-flud">
-            <div class="row justify-content-evenly mt-5">
+            <div class="destra row justify-content-evenly mt-5 w-100">
                 <div class="col-3 categoria rounded-circle"></div>
                 <div class="col-3 categoria rounded-circle"></div>
                 <div class="col-3 categoria rounded-circle"></div>
                 
             </div>
-            <div class="row justify-content-evenly mt-5">
+            <div class="sinistra row justify-content-evenly mt-5 w-100">
                 <div class="col-3 categoria rounded-circle"></div>
                 <div class="col-3 categoria rounded-circle"></div>
                 <div class="col-3 categoria rounded-circle"></div>

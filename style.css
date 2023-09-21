@@ -4,9 +4,13 @@ nav{
     background-color: darkred;
 position: fixed;
 width: 100%;
+transition: 800ms;
+color: white;
+z-index: 1;
 }
 header{
     background-color: darkred;
+    color: white;
 }
 .contenitore_header{
     align-items: center;
@@ -45,4 +49,93 @@ background-color: rgba(139, 0, 0, 0.329);
 backdrop-filter: blur(5px);
 border-radius: 50px;
 }
-
+.destra{
+    position: relative;
+    right: -1300px;
+animation-name: destra;
+animation-duration: 1s;
+animation-fill-mode: forwards;
+}
+.sinistra{
+    position: relative;
+    left: -1300px;
+animation-name: sinistra;
+animation-duration: 1s;
+animation-fill-mode: forwards;
+}
+@keyframes destra{
+    100%{right: 0;}
+}
+@keyframes sinistra{
+    100%{left: 0;}
+}
+.header_button{
+    background-color: yellow;
+    border: 0;
+    position: relative;
+}
+.img_card{
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    height: 45%;
+}
+.card{
+    background-color: darkred;
+    color: white;
+    border: 1px solid rgb(255, 255, 0);
+    width: 18rem;
+    margin-top: 30px;
+}
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 55%;
+}
+.btn_card{
+    border: 1px solid white;
+    color: white;
+    background-color: darkred;
+    border-radius: 5px;
+    
+}
+.btn_card:hover{
+    color: black;
+    background-color: yellow;
+    border: 1px solid black;
+    transition: 0.3s;
+    font-weight: 500;
+}
+.panino{
+    height: 40px;
+    width: 40px;
+    border: 2px solid black;
+    border-radius: 5px;
+    display: none;
+    margin: 5px;
+}
+.linea{
+    background-color: black;
+    height: 4px;
+    width: 80%;
+}
+@media screen and (max-width: 400px) {
+   .descrizzione_header{
+    background-image: url("https://www.barbieriantiquariato.it/wp-content/uploads/2017/05/compro-antiquariato-orientale.jpg");
+   }
+   .media{
+    display: none;
+   }
+   nav{
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: end;
+    width: 100%;
+   }
+    .panino{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
