@@ -12,18 +12,32 @@
 </head>
   <body>
     <nav>
-        <div class="row">
-            <div class="panino">
-                <div class="linea"></div>
-                <div class="linea"></div>
-                <div class="linea"></div>
+        <div class="container d-none container_panino">
+            <div class="row">
+                <div class="col-6">
+                    <h3 class="">presto.it</h3>
+                </div>
+                <div class="col-6 d-flex justify-content-end">
+                    <div class="panino">
+                        <div class="linea"></div>
+                        <div class="linea"></div>
+                        <div class="linea"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row menu d-none">
+                        <div>home</div>
+                        <div>annunci</div>
+                        <div>about us</div>
+                        <div>categorie</div>
+                        <div>contatti</div>
             </div>
         </div>
-        <div class="media">
+        <div class="media d-flex w-100">
             <div class="w-25">
                 <h3 class="ms-2">presto.it</h3>
             </div>
-            <div class=" w-50 d-flex justify-content-evenly">
+            <div class="align w-50 d-flex justify-content-evenly align-content-center">
                 <div>home</div>
                 <div>annunci</div>
                 <div>about us</div>
@@ -46,9 +60,15 @@
             <div class="descrizzione_header col-12 col-md-4 border text-center d-flex flex-column justify-content-evenly h-100">
                 <h1>titolo della pagina</h1>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati non nisi sequi in quia ipsa a dignissimos magnam, ex optio numquam molestias delectus dicta animi tempora eligendi. Asperiores, consectetur veniam?</p>
-                <div>
-                    <button class="me-5 header_button">compra</button>
-                    <button class="ms-5 header_button">esplora</button>
+                <div class="row justify-content-evenly">
+                    <div class="cornice">
+                            <button class="header_button">compra</button>
+                            <div class="cornice1"></div>
+                    </div>
+                    <div class="cornice">
+                        <button class="header_button">esplora</button>
+                        <div class="cornice1"></div>
+                    </div>
                 </div>
             </div>
             <div class="d-none d-md-block col-3 border p-0 rounded-circle h-100">
@@ -68,17 +88,44 @@
             <h1>categorie</h1>
         </div>
         <hr>
-        <div class="container-flud">
-            <div class="destra row justify-content-evenly mt-5 w-100">
-                <div class="col-3 categoria rounded-circle"></div>
-                <div class="col-3 categoria rounded-circle"></div>
-                <div class="col-3 categoria rounded-circle"></div>
-                
+        <div class="container-fluid cat">
+            <div class="trigger">
+                <div class="row anime1">
+                    <div class="col-4">
+                        <div class="bordo rounded-circle">
+                            <img class="categoria" src="https://picsum.photos/200" alt="">
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="bordo rounded-circle">
+                            <img class="categoria" src="https://picsum.photos/200" alt="">
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="bordo rounded-circle">
+                            <img class="categoria" src="https://picsum.photos/200" alt="">
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="sinistra row justify-content-evenly mt-5 w-100">
-                <div class="col-3 categoria rounded-circle"></div>
-                <div class="col-3 categoria rounded-circle"></div>
-                <div class="col-3 categoria rounded-circle"></div>
+            <div class="trigger1">
+                <div class="row anime2">
+                    <div class="col-4">
+                        <div class="bordo rounded-circle">
+                            <img class="categoria" src="https://picsum.photos/200" alt="">
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="bordo rounded-circle">
+                            <img class="categoria" src="https://picsum.photos/200" alt="">
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="bordo rounded-circle">
+                            <img class="categoria" src="https://picsum.photos/200" alt="">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="container-fluid">

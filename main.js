@@ -11,7 +11,6 @@ function conta() {
                 offerte.innerHTML = counter;
             }
             else{
-                console.log("prova");
                 clearInterval(intervallo1)
             }
             counter++;
@@ -59,7 +58,7 @@ let card_row = document.querySelector(".card_row");
 let card_container = document.querySelector(".card_container")
 array = [
     {nome:"lastra in marmo cinese", prezzo:3000, vendita:"asta", descrizzione:"un preggiato prezzo di antiquariato risalente al tredicesimo secolo"},
-    {nome:"chimono", prezzo:1200, vendita:"pezzo fisso", descrizzione:"un preggiato pezzo di antiquariato risalente al tredicesimo secolo un preggiato pezzo di antiquariato risalente al tredicesimo secolo"},
+    {nome:"chimono", prezzo:1200, vendita:"pezzo fisso", descrizzione:"un preggiato pezzo di antiquariato risalente al tredicesimo secolo un preggiato pezzo"},
     {nome:"bachette di mao zedong", prezzo:80000, vendita:"asta", descrizzione:""},
     {nome:"pezzo di bomba atomica", prezzo:300000, vendita:"asta", descrizzione:"un preggiato prezzo di antiquariato risalente al tredicesimo secolo"},
 ];
@@ -78,7 +77,7 @@ array.forEach((articolo, i)=> {
           <p>tipo di vendita:</p>
           <p>${articolo.vendita}</p>
           </div>
-          <div class="text-center ms-5 mb-2">
+          <div class="text-center ms-5">
           <p>prezzo:</p>
           <p>${articolo.prezzo}$</p>
           </div>
@@ -90,13 +89,28 @@ array.forEach((articolo, i)=> {
     }
 });
 let panino = document.querySelector(".panino");
+let menu = document.querySelector(".menu");
 panino.addEventListener("click",()=>{
-    nav.innerHTML = `
-    <div class=" w-50">
-    <div>home</div>
-    <div>annunci</div>
-    <div>about us</div>
-    <div>categorie</div>
-    <div>contatti</div>
-</div>`
+    menu.classList.toggle("d-none")
 });
+let trigger1 = document.querySelector(".trigger")
+let trigger2 = document.querySelector(".trigger1")
+let anime1 = document.querySelector(".anime1");
+let anime2 = document.querySelector(".anime2");
+let animation = new IntersectionObserver((row)=>{
+    row.forEach((p)=> {
+        if (p.isIntersecting) {
+            anime1.classList.add("destra");
+        }
+    });
+});
+animation.observe(trigger1);
+
+let animation1 = new IntersectionObserver((row)=>{
+    row.forEach((p)=> {
+        if (p.isIntersecting) {
+            anime2.classList.add("sinistra");
+        }
+    });
+});
+animation1.observe(trigger2);
