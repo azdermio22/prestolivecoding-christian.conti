@@ -57,20 +57,23 @@ window.addEventListener("scroll", ()=>{
 let card_row = document.querySelector(".card_row");
 let card_container = document.querySelector(".card_container")
 array = [
-    {nome:"lastra in marmo cinese", prezzo:3000, vendita:"asta",popup:"new", descrizzione:"un preggiato prezzo di antiquariato risalente al tredicesimo secolo"},
-    {nome:"chimono", prezzo:1200, vendita:"pezzo fisso",popup:"sconti", descrizzione:"un preggiato pezzo di antiquariato risalente al tredicesimo secolo un preggiato pezzo"},
-    {nome:"bachette di mao zedong", prezzo:80000, vendita:"asta",popup:"", descrizzione:""},
-    {nome:"pezzo di bomba atomica", prezzo:300000, vendita:"asta",popup:"", descrizzione:"un preggiato prezzo di antiquariato risalente al tredicesimo secolo"},
+    {nome:"lastra in marmo cinese", prezzo:3000, vendita:"asta",popup:["new"], descrizzione:"un preggiato prezzo di antiquariato risalente al tredicesimo secolo"},
+    {nome:"chimono", prezzo:1200, vendita:"pezzo fisso",popup:["sconti", "sale 50%"], descrizzione:"un preggiato pezzo di antiquariato risalente al tredicesimo secolo un preggiato pezzo"},
+    {nome:"bachette di mao zedong", prezzo:80000, vendita:"asta",popup:[], descrizzione:""},
+    {nome:"pezzo di bomba atomica", prezzo:300000, vendita:"asta",popup:[], descrizzione:"un preggiato prezzo di antiquariato risalente al tredicesimo secolo"},
 ];
 array.forEach((articolo, i)=> {
-
     if (i < 3) {    
         let tag = document.createElement("div");
         tag.classList.add("p-0", "card", "text-center");
         let popup ="";
         if (articolo.popup !="") {
-            popup = `<div class="new">${articolo.popup}</div>`
-        }
+            if (articolo.popup.length > 1) {
+                popup = `<div class="${articolo.popup[0]}">${articolo.popup[1]}</div>`
+            }else{
+                popup = `<div class="${articolo.popup[0]}">${articolo.popup[0]}</div>`
+            }
+            }
         tag.innerHTML = `${popup}
         <img class="img_card" src="https://www.nationalgeographic.it/upload/ngi-hero/cover-1682446481256-tigrotto.jpeg" class="card-img-top" alt="...">
         <div class="card-body">

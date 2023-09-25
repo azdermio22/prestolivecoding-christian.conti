@@ -1,0 +1,23 @@
+[
+    {"nome":"chimono","prezzo":7654,"categoria":"vestiario","vendita":"fissa","popup":"","descrizzione":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit quos porro eligendi?"},
+    {"nome":"bachette","prezzo":2435,"categoria":"","vendita":"fissa","popup":"","descrizzione":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit quos porro eligendi?"},
+    {"nome":"armadio","prezzo":764534,"categoria":"mobilio","vendita":"fissa","popup":"","descrizzione":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit quos porro eligendi?"},
+    {"nome":"comodino","prezzo":3415,"categoria":"mobilio","vendita":"fissa","popup":"","descrizzione":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit quos porro eligendi?"},
+    {"nome":"mattone della muraglia cinese","prezzo":5657,"categoria":"storico","vendita":"fissa","popup":"","descrizzione":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit quos porro eligendi?"},
+    {"nome":"katana","prezzo":134,"categoria":"armi","vendita":"asta","popup":"","descrizzione":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit quos porro eligendi?"},
+    {"nome":"scuriken","prezzo":678,"categoria":"armi","vendita":"fissa","popup":"","descrizzione":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit quos porro eligendi?"},
+    {"nome":"stella ninja","prezzo":598,"categoria":"armi","vendita":"fissa","popup":"","descrizzione":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit quos porro eligendi?"},
+    {"nome":"statua di budda","prezzo":765,"categoria":"ornamenti","vendita":"asta","popup":"","descrizzione":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit quos porro eligendi?"},
+    {"nome":"avorio","prezzo":4253,"categoria":"ornamenti","vendita":"fissa","popup":"","descrizzione":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit quos porro eligendi?"},
+    {"nome":"zoccoli","prezzo":13,"categoria":"vestiario","vendita":"fissa","popup":"","descrizzione":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit quos porro eligendi?"},
+    {"nome":"bracciale","prezzo":65432,"categoria":"gioielli","vendita":"fissa","popup":"","descrizzione":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit quos porro eligendi?"},
+    {"nome":"collana","prezzo":4565,"categoria":"gioglielli","vendita":"asta","popup":"","descrizzione":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit quos porro eligendi?"},
+    {"nome":"orecchini","prezzo":1343,"categoria":"gioglielli","vendita":"fissa","popup":"","descrizzione":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit quos porro eligendi?"},
+    {"nome":"tappeto ornamentale","prezzo":340,"categoria":"ornamentali","vendita":"fissa","popup":"","descrizzione":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit quos porro eligendi?"},
+    {"nome":"colezzione di libbri antichi","prezzo":563,"categoria":"storico","vendita":"fissa","popup":"","descrizzione":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit quos porro eligendi?"},
+    {"nome":"set da tè","prezzo":5678,"categoria":"ornamentali","vendita":"asta","popup":"","descrizzione":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit quos porro eligendi?"},
+    {"nome":"vaso ming","prezzo":6789,"categoria":"ornamentali","vendita":"fissa","popup":"","descrizzione":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit quos porro eligendi?"},
+    {"nome":"armatura da samurai","prezzo":9876,"categoria":"storico","vendita":"fissa","popup":"","descrizzione":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit quos porro eligendi?"},
+    {"nome":"piatto ornamentali","prezzo":898765,"categoria":"ornamentale","vendita":"asta","popup":"","descrizzione":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit quos porro eligendi?"}
+
+]
