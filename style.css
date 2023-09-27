@@ -208,10 +208,66 @@ border-radius: 50px;
     font-size: large;
     text-shadow: 0px 0px 1px black;
 }
-a{
+.nav_link{
     color: white;
     text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+.hover{
+    height: 0px;
+    width: 0px;
+    background-color: yellow;  
+}
+.nav_link:hover{
+    text-shadow: 3px 3px black;
+}
+.nav_link:hover .hover{
+height: 2px;
+width: 100%;
+background-color: yellow;
+transition: 1s;
+}
+.user{
+    border: 1px solid darkred;
+    height: 100px;
+    width: 100px;
+}
+.profilo{
+    border-radius: 100px;
+    height: 100%;
+    width: 100%;
+}
+.commento{
+    height: 100px;
+    overflow: hidden;
+}
+/* commenti */
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+  .filtri{
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    border-right: 1px solid gray;
+    position: absolute;
+    width: 90px;
+  }
 @media screen and (max-width: 400px) {
    .descrizzione_header{
     background-image: url("https://www.barbieriantiquariato.it/wp-content/uploads/2017/05/compro-antiquariato-orientale.jpg");

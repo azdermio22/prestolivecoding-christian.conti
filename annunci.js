@@ -6,6 +6,7 @@ fetch("./annunci.json").then((response)=> response.json()).then((data)=>{
    let range = document.querySelector("#range");
    let trigger = [...bottoni,ricerca,range];
    let filtro = [];
+   let counter = 0;
    trigger.forEach((el, i)=>{
        trigger[i].addEventListener("input",()=>{
         crea_card()
@@ -16,32 +17,44 @@ fetch("./annunci.json").then((response)=> response.json()).then((data)=>{
              filtro = data.filter((a)=> a.categoria == bottone.outerText);
          }
      })
+     if (filtro == "") {
+        filtro = data
+     }
      let filtro2 = [];
          filtro2 = [];
          filtro.forEach((el)=> {
-             if (el.nome.includes(ricerca.value)) {
-                 filtro2.push(el);
-             }
+             bottoni.forEach(el => {
+                el.addEventListener("input",()=>{
+                    counter = 0;
+                })   
+            });
+            if (el.nome.includes(ricerca.value)) {
+                filtro2.push(el);
+            }
          });
          let prezzo = [];
          filtro2.forEach(el => {
              prezzo.push(el.prezzo);
          });
-         range.max = Math.max(...prezzo);
+         console.log(range.value);
          range.min = Math.min(...prezzo);
-     if (filtro2 == "") {
-         filtro2 = filtro;
-     }
+         max = Math.max(...prezzo);
+         range.max = max;
+         if (counter == 0) {
+             range.value = max;
+             counter++;
+         }
      let filtro3 = [];
          filtro3 = [];
          filtro2.forEach((el) => {
+            console.log(range.value);
              if (el.prezzo <= range.value) {
                  filtro3.push(el)
              }
          });
+         console.log(range.value);
          card_row.innerHTML = "";
-         filtro3.forEach((articolo, i)=> {
-             if (i < 3) {    
+         filtro3.forEach((articolo, i)=> {   
                  let tag = document.createElement("div");
                  tag.classList.add("p-0", "card", "text-center");
                  let popup ="";
@@ -72,9 +85,13 @@ fetch("./annunci.json").then((response)=> response.json()).then((data)=>{
                    <button href="#" class="btn_card">vai al articolo</button>
                  </div>`
                  card_row.appendChild(tag);
-             }
          });
     }
     crea_card();
    })
+})
+let bottone_filtro = document.querySelector(".filtri");
+let pannello = document.querySelector(".pannello");
+bottone_filtro.addEventListener("click",()=>{
+    pannello.classList.toggle("d-none")
 })
