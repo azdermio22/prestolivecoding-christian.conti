@@ -227,7 +227,7 @@ border-radius: 50px;
 height: 2px;
 width: 100%;
 background-color: yellow;
-transition: 1s;
+transition: .4s;
 }
 .user{
     border: 1px solid darkred;
@@ -267,6 +267,21 @@ transition: 1s;
     border-right: 1px solid gray;
     position: absolute;
     width: 90px;
+    background-color: white;
+  }
+  .pannello{
+    border: 1px solid gray;
+    margin-left: -336px;
+  }
+  .ap{
+    animation-name: ap;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+  .ap1{
+    animation-name: ap1;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
   }
 @media screen and (max-width: 400px) {
    .descrizzione_header{
@@ -284,6 +299,19 @@ transition: 1s;
 .container_panino{
     display: inline-block !important;
 }
+}
+@keyframes ap {
+    0%{
+        left: 0;
+    }
+    100%{
+        left: 336px;
+    }
+}
+@keyframes ap1 {
+    100%{
+        margin-left: 0px;
+    }
 }
 @keyframes destra {
     100%{

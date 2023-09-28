@@ -36,7 +36,6 @@ fetch("./annunci.json").then((response)=> response.json()).then((data)=>{
          filtro2.forEach(el => {
              prezzo.push(el.prezzo);
          });
-         console.log(range.value);
          range.min = Math.min(...prezzo);
          max = Math.max(...prezzo);
          range.max = max;
@@ -47,12 +46,10 @@ fetch("./annunci.json").then((response)=> response.json()).then((data)=>{
      let filtro3 = [];
          filtro3 = [];
          filtro2.forEach((el) => {
-            console.log(range.value);
              if (el.prezzo <= range.value) {
                  filtro3.push(el)
              }
          });
-         console.log(range.value);
          card_row.innerHTML = "";
          filtro3.forEach((articolo, i)=> {   
                  let tag = document.createElement("div");
@@ -90,8 +87,21 @@ fetch("./annunci.json").then((response)=> response.json()).then((data)=>{
     crea_card();
    })
 })
+let counter = 0;
+let freccie = document.querySelector(".freccie")
+let colonna = document.querySelector(".colonna")
 let bottone_filtro = document.querySelector(".filtri");
 let pannello = document.querySelector(".pannello");
 bottone_filtro.addEventListener("click",()=>{
-    pannello.classList.toggle("d-none")
+    colonna.classList.toggle("col-9");
+    colonna.classList.toggle("col-11");
+    bottone_filtro.classList.toggle("ap");
+    pannello.classList.toggle("ap1");
+    if (counter == 0) {
+        counter++;
+        freccie.innerHTML = "<<<";
+    }else{
+        counter--;
+        freccie.innerHTML = ">>>";
+    }
 })
