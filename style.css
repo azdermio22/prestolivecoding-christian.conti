@@ -268,10 +268,15 @@ transition: .4s;
     position: absolute;
     width: 90px;
     background-color: white;
+    cursor: pointer;
+    z-index: 1;
+    color: darkred;
+    font-weight: 500;
   }
   .pannello{
     border: 1px solid gray;
     margin-left: -336px;
+    position:relative;
   }
   .ap{
     animation-name: ap;
@@ -282,6 +287,77 @@ transition: .4s;
     animation-name: ap1;
     animation-duration: 1s;
     animation-fill-mode: forwards;
+  }
+  .apr{
+    animation-name: apr;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+  .ap1r{
+    animation-name: ap1r;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+  .prezzo_corrente{
+    display: inline-block;
+    width: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  #ricerca{
+    width: 100%;
+  }
+  .trans{
+    transition: 1s;
+  }
+  .over{
+    overflow: hidden;
+  }
+  .ruota{
+    animation-name: ruota;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+  }
+  .ruota1{
+    animation-name: ruota1;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+  }
+  .freccia{
+    color: darkred;
+  }
+  .form-check-input:checked{
+    background-color: red;
+    border-color: darkred;
+  }
+  .form-range{
+    color: red;
+  }
+  .custom-range::-webkit-slider-thumb{
+    background: red;
+  }
+  .custom-range::-moz-range-thumb{
+    background: red;
+  }
+  .custom-range::-ms-thumb{
+    background: red;
+  }
+  .ordina{
+    border: 2px solid rgb(185, 185, 185);
+    color: rgb(185, 185, 185);
+    cursor: pointer;
+    padding: 2px;
+    font-weight: 500;
+  }
+  .ordina1{
+    border: 2px solid rgb(185, 185, 185);
+    color: rgb(185, 185, 185);
+    cursor: pointer;
+    padding: 2px;
+    font-weight: 500;
+  }
+  .freccie{
+    font-weight: 900;
   }
 @media screen and (max-width: 400px) {
    .descrizzione_header{
@@ -313,6 +389,22 @@ transition: .4s;
         margin-left: 0px;
     }
 }
+@keyframes apr {
+    0%{
+        left: 336px;
+    }
+    100%{
+        left: 0px;
+    }
+}
+@keyframes ap1r {
+    0%{
+        margin-left: 0;
+    }
+    100%{
+        margin-left: -336px;
+    }
+}
 @keyframes destra {
     100%{
         right: 0;
@@ -326,5 +418,23 @@ transition: .4s;
 @keyframes new{
     100%{
         scale: 1.08;
+    }
+}
+@keyframes ruota{
+    0%{
+        transform: rotateZ(0deg);
+    }
+    100%{
+        transform: rotateZ(180deg);
+
+    }
+}
+@keyframes ruota1{
+    0%{
+        transform: rotateZ(180deg);
+    }
+    100%{
+        transform: rotateZ(0deg);
+
     }
 }

@@ -1,5 +1,5 @@
 [
-    {"nome":"chimono","prezzo":7654,"categoria":"vestiario","vendita":"fissa","popup":"","descrizzione":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit quos porro eligendi?"},
+    {"nome":"chimono","prezzo":7654,"categoria":"vestiario","vendita":"fissa","popup":"new","descrizzione":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit quos porro eligendi?"},
     {"nome":"bachette","prezzo":2435,"categoria":"","vendita":"fissa","popup":"","descrizzione":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit quos porro eligendi?"},
     {"nome":"armadio","prezzo":764534,"categoria":"mobilio","vendita":"fissa","popup":"","descrizzione":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit quos porro eligendi?"},
     {"nome":"comodino","prezzo":3415,"categoria":"mobilio","vendita":"fissa","popup":"","descrizzione":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit quos porro eligendi?"},
